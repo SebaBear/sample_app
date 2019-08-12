@@ -12,7 +12,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: sebastian_rusu
+  database: sample_app_test
   pool: 5
   username: sebastian_rusu
   password: karynutza
