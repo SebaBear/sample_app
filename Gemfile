@@ -4,6 +4,12 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+#gems for pagination
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+#adding 'fake' users
+gem 'faker'
+
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 # Securing passwoerds with hash functions

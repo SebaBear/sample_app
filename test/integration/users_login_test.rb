@@ -1,9 +1,6 @@
 require 'test_helper'
 
 class UsersLoginTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
 
   def setup
     @user = users(:michael)
@@ -52,12 +49,13 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", logout_path,      count: 0
     assert_select "a[href=?]", user_path(@user), count: 0
   end
-=begin
+
   test "login with remembering" do
     log_in_as(@user, remember_me: '1')
-    assert_equal User.digest(cookies[:remember_token]), assigns(:user).remember_digest
+    assert_equal cookies[:remember_token], assigns(:user).remember_token
   end
-=end
+
+
   test "login without remembering" do
     # Log in to set the cookie.
     log_in_as(@user, remember_me: '1')
