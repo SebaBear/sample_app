@@ -4,7 +4,6 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-#
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 # Securing passwoerds with hash functions
@@ -17,7 +16,7 @@ gem 'pg'
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-#Use bootstrap
+# Use bootstrap
 gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -36,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-#using guard for testing
+# using guard for testing
 gem 'guard'
 gem 'guard-minitest'
 # Use Capistrano for deployment
