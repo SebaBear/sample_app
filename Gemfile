@@ -7,8 +7,11 @@ end
 #gems for pagination
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-#adding 'fake' users
+#add 'fake' users
 gem 'faker'
+#gems for uploading images
+gem 'carrierwave'
+gem 'mini_magick'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
